@@ -1,0 +1,332 @@
+.projects-items {
+  text-align: center;
+  background: #005c97;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#363795), to(#005c97));
+  background: linear-gradient(to right, #363795, #005c97);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 70px 5px 110px 5px;
+}
+
+.projects-items h2 {
+  display: inline-block;
+  text-align: center;
+  margin: 25px auto;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+}
+
+.projects-inner-div {
+  text-align: center;
+  background: #fff;
+  max-width: 980px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px #000;
+          box-shadow: 0px 0px 10px 0px #000;
+  margin: 30px auto;
+  padding: 20px 10px;
+}
+
+.menu-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 5px auto;
+  list-style: none;
+}
+
+.menu-projects li {
+  margin: 5px 10px;
+  padding: 7.5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.li-disabled {
+  color: #1f1f1f;
+  background-color: #fff;
+}
+
+.li-active {
+  color: #fff;
+  background: #005c97;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#363795), to(#005c97));
+  background: linear-gradient(to right, #363795, #005c97);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.active-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.disabled-content {
+  display: none;
+}
+
+.card-items {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  position: relative;
+  padding: 20px;
+  margin: 15px 10px;
+  height: 220px;
+  width: 300px;
+  background-color: #5a5a5a;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card div {
+  border-radius: 0 0 5px 5px;
+  background-color: #5a5a5a;
+  position: absolute;
+  height: 60px;
+  top: 168px;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 1;
+  -webkit-box-shadow: 0px 0px 10px 0px #000;
+          box-shadow: 0px 0px 10px 0px #000;
+}
+
+.card h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.card p {
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.card-button-link {
+  display: block;
+  margin: 7.5px auto;
+  background-color: #005c97;
+  border-radius: 5px;
+  color: #fff;
+  padding: 7.5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.card-button-link:hover {
+  background-color: #363795;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#websites .card-button-link:nth-child(2) {
+  display: none;
+}
+
+.card-items .card:nth-child(1) {
+  z-index: 6;
+}
+
+.card-items .card:nth-child(2) {
+  z-index: 5;
+}
+
+.card-items .card:nth-child(3) {
+  z-index: 4;
+}
+
+.card-items .card:nth-child(4) {
+  z-index: 3;
+}
+
+.card-items .card:nth-child(5) {
+  z-index: 2;
+}
+
+.card-items .card:nth-child(6) {
+  z-index: 1;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card:hover div {
+  height: 215px;
+}
+
+.card:hover p {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.thumb-img {
+  -webkit-box-shadow: 0px 0px 10px 0px #000;
+          box-shadow: 0px 0px 10px 0px #000;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.thumb-img.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.thumb-video {
+  -webkit-box-shadow: 0px 0px 10px 0px #000;
+          box-shadow: 0px 0px 10px 0px #000;
+  border-radius: 5px 5px 0 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.thumb-video.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media screen and (max-width: 1367px) {
+  .projects-items {
+    padding: 55px 5px 80px 5px;
+  }
+  .projects-inner-div {
+    padding: 20px 10px 30px 10px;
+  }
+  .card {
+    height: 200px;
+    width: 275px;
+  }
+  .card div {
+    top: 153px;
+  }
+  .card:hover {
+    z-index: 1;
+  }
+  .card:hover div {
+    height: 215px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .projects-inner-div {
+    max-width: 675px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .projects-inner-div {
+    max-width: 660px;
+    padding: 10px 10px 20px 10px;
+  }
+  .card {
+    height: 200px;
+    width: 275px;
+  }
+  .card div {
+    top: 153px;
+  }
+  .card h4 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .card:hover div {
+    height: 185px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .projects-inner-div {
+    max-width: 350px;
+    padding: 20px 5px 25px 5px;
+  }
+  .menu-projects {
+    font-size: 18px;
+  }
+  .menu-projects li {
+    margin: 5px;
+    padding: 7.5px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .projects-inner-div {
+    padding: 15px 2.5px;
+    max-width: 100%;
+  }
+  .card {
+    padding: 10px;
+    margin: 15px 5px;
+    height: 185px;
+    width: 250px;
+  }
+  .card div {
+    top: 135px;
+    z-index: 11;
+  }
+  .card:hover div {
+    height: 175px;
+  }
+}
+/*# sourceMappingURL=Projects.css.map */
