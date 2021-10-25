@@ -3,8 +3,22 @@ main {
 }
 
 .main-inner-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  padding: 255px 15px;
+  min-height: 600px;
+  height: 100vh;
 }
 
 .main-inner-div h2 {
@@ -89,24 +103,12 @@ main {
 }
 
 @media screen and (max-width: 1369px) {
-  .main-inner-div {
-    padding: 145px 15px 105px 15px;
-  }
   .main-inner-div img {
     width: 226px;
   }
 }
 
-@media screen and (max-width: 769px) {
-  .main-inner-div {
-    padding: 135px 15px;
-  }
-}
-
 @media screen and (max-width: 480px) {
-  .main-inner-div {
-    padding: 125px 15px 95px 15px;
-  }
   .main-inner-div img {
     width: 200px;
   }
@@ -115,12 +117,6 @@ main {
   }
   .main-inner-div h3 {
     font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .main-inner-div {
-    padding: 105px 15px 85px 15px;
   }
 }
 /*# sourceMappingURL=Main.css.map */

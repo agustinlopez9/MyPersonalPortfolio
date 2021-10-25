@@ -28,7 +28,7 @@ function Card(props) {
                 className={props.class}
                 key={props.index}
             >
-                <img src={props.url} alt={props.url} className={hover ? "thumb-img" : "thumb-img active"} />
+                <img src={process.env.PUBLIC_URL + props.url} alt={props.url} className={hover ? "thumb-img" : "thumb-img active"} />
                 <div>
                     <h4>{props.name}</h4>
                     <p className={hover ? "show" : "hide"}>
@@ -42,7 +42,7 @@ function Card(props) {
                     </p>
                 </div>
                 <video ref={videoRef} muted={true} controls={false} className={hover ? "thumb-video active" : "thumb-video"}>
-                    <source src={props.video} type="video/mp4"></source>
+                    <source src={process.env.PUBLIC_URL + props.video} type="video/mp4"></source>
                 </video>
             </div>
         </React.Fragment>

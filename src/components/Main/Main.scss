@@ -3,8 +3,13 @@ main {
 }
 
 .main-inner-div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 255px 15px;
+    min-height: 600px;
+    height: 100vh;
     h2 {
         color: #1f1f1f;
         font-size: 28px;
@@ -75,16 +80,9 @@ main {
 
 @media screen and (max-width: 1369px) {
     .main-inner-div {
-        padding: 145px 15px 105px 15px;
         img {
             width: 226px;
         }
-    }
-}
-
-@media screen and (max-width: 769px) {
-    .main-inner-div {
-        padding: 135px 15px;
     }
 }
 
@@ -93,18 +91,11 @@ main {
         img {
             width: 200px;
         }
-        padding: 125px 15px 95px 15px;
         h2 {
             font-size: 26px;
         }
         h3 {
             font-size: 22px;
         }
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .main-inner-div {
-        padding: 105px 15px 85px 15px;
     }
 }

@@ -12,8 +12,8 @@ export default function Main() {
                 <main id={item.scroll} key={"main"}>
                     <div key={index} className="main-inner-div">
                         <div className="profile-div" data-aos="fade-up">
-                            <img src={item.thumbnail} alt={item.image} className={img ? "thumbnail hide" : "thumbnail show"}></img>
-                            <img src={item.image} alt={item.image} onLoad={setImg} className={img ? "picture show" : "picture hide"}></img>
+                            <img src={process.env.PUBLIC_URL + item.thumbnail} alt={item.image} className={img ? "thumbnail hide" : "thumbnail show"}></img>
+                            <img src={process.env.PUBLIC_URL + item.image} alt={item.image} onLoad={setImg} className={img ? "picture show" : "picture hide"}></img>
                         </div>
                         <h2 data-aos="fade-up" data-aos-delay="100">
                             {item.title}
