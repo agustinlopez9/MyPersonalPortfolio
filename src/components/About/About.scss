@@ -1,10 +1,10 @@
-.about-section{
+.about-section {
     background-color: #fff;
     max-width: 1024px;
     margin: 0 auto;
     padding: 55px 20px 75px 20px;
     text-align: center;
-    h2{
+    h2 {
         text-align: center;
         margin: 25px auto 5px auto;
         padding: 20px 0;
@@ -13,11 +13,11 @@
         font-weight: 500;
         text-transform: uppercase;
     }
-    p{
+    p {
         font-size: 20px;
         color: #656565;
     }
-    a{
+    a {
         display: inline-block;
         margin: 35px auto;
         color: #363795;
@@ -29,63 +29,115 @@
         transition: all 0.2s ease;
         cursor: pointer;
     }
-    a:hover{
+    a:hover {
         color: #fff;
-        background-color:  #363795;
+        background-color: #363795;
     }
-    ul{
+    ul {
         list-style: none;
     }
 }
 
-.information-div{
+.information-div {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
 }
-.info-block{
+.info-block {
     max-width: 400px;
     box-shadow: 0px 0px 5px 0px #000;
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
-    h4{
+    h4 {
         font-size: 24px;
         font-weight: 400;
         margin-bottom: 5px;
     }
-    i{
+    i {
         font-size: 24px;
         margin-right: 7.5px;
     }
 }
-.contact-ul{
+.contact-ul {
     text-align: left;
-    h4{
+    h4 {
         display: inline-block;
         font-size: 24px;
         font-weight: 400;
         margin: 5px auto;
         border-bottom: 2px solid #000;
     }
-    li{
+    li {
         margin: 5px auto;
         font-size: 20px;
         color: #656565;
     }
 }
-.p-active{
+.p-active {
     display: block;
 }
 
-.p-disabled{
+.p-disabled {
     display: none;
 }
 
 @media screen and (max-width: 1025px) {
-    .information-div{
+    .information-div {
         flex-direction: column;
         align-items: center;
+    }
+    .about-section {
+        p {
+            font-size: 18px;
+        }
+    }
+    .info-block {
+        h4 {
+            font-size: 22px;
+        }
+        i {
+            font-size: 22px;
+        }
+    }
+    .contact-ul {
+        text-align: center;
+        h4 {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+        li {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-section {
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .info-block {
+        h4 {
+            font-size: 20px;
+        }
+        i {
+            font-size: 20px;
+        }
+    }
+    .contact-ul {
+        text-align: center;
+        h4 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        li {
+            font-size: 16px;
+        }
     }
 }

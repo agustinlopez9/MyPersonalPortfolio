@@ -13,7 +13,7 @@ export const AboutItems = [
     },
     {
         title: "Javascript",
-        desc: "Intermediate algorithms, template literals, functional programming and ES6.",
+        desc: "Intermediate algorithms, functional programming and ES6.",
         cName: "info-block",
         icon: "fab fa-js",
     },

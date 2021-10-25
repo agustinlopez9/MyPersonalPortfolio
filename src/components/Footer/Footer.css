@@ -5,4 +5,11 @@ footer {
   font-size: 18px;
   text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 40px 5px;
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

@@ -116,5 +116,49 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .about-section p {
+    font-size: 18px;
+  }
+  .info-block h4 {
+    font-size: 22px;
+  }
+  .info-block i {
+    font-size: 22px;
+  }
+  .contact-ul {
+    text-align: center;
+  }
+  .contact-ul h4 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .contact-ul li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-section h2 {
+    font-size: 28px;
+  }
+  .about-section p {
+    font-size: 16px;
+  }
+  .info-block h4 {
+    font-size: 20px;
+  }
+  .info-block i {
+    font-size: 20px;
+  }
+  .contact-ul {
+    text-align: center;
+  }
+  .contact-ul h4 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .contact-ul li {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=About.css.map */
