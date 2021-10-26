@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar(props) {
     const [state, setState] = useState(false);
-
     return (
         <React.Fragment>
             <nav className="NavbarItems">
                 <div className="navbar-inner">
                     <h1 className="navbar-logo">
-                        <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="logo.png" />
+                        <img src={process.env.PUBLIC_URL + props.logourl} alt="logo.png" />
                         <span>My Portfolio</span>
                     </h1>
                     <ul className={state ? "nav-menu active" : "nav-menu"}>
@@ -23,6 +22,15 @@ export default function Navbar() {
                                 </li>
                             );
                         })}
+                        <button
+                            className={state ? "toggleDarkMode active" : "toggleDarkMode"}
+                            onClick={() => {
+                                props.button();
+                                setState(!state);
+                            }}
+                        >
+                            {props.text}
+                        </button>
                     </ul>
                     <div className="menu-icon" onClick={() => setState(!state)}>
                         <i className={state ? "fas fa-times" : "fas fa-bars"}></i>

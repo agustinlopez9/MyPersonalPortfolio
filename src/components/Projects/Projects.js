@@ -53,7 +53,7 @@ export default function Projects() {
     return (
         <React.Fragment>
             <div className="projects-items" id="projects">
-                <h2>My Projects</h2>
+                <h2 id="title-projects">My Projects</h2>
                 <div className="projects-inner-div">
                     <ul className="menu-projects">
                         <li onClick={() => setToggleTab(0)} className={toggleTab === 0 ? "li-active" : "li-disabled"}>

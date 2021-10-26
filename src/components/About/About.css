@@ -1,5 +1,4 @@
 .about-section {
-  background-color: #fff;
   max-width: 1024px;
   margin: 0 auto;
   padding: 55px 20px 75px 20px;
@@ -10,7 +9,6 @@
   text-align: center;
   margin: 25px auto 5px auto;
   padding: 20px 0;
-  color: #1f1f1f;
   font-size: 32px;
   font-weight: 500;
   text-transform: uppercase;
@@ -18,26 +16,18 @@
 
 .about-section p {
   font-size: 20px;
-  color: #656565;
 }
 
 .about-section a {
   display: inline-block;
   margin: 35px auto;
-  color: #363795;
   font-size: 22px;
   font-weight: 600;
   text-decoration: none;
   padding: 5px 25px;
-  border: 2px solid #363795;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   cursor: pointer;
-}
-
-.about-section a:hover {
-  color: #fff;
-  background-color: #363795;
 }
 
 .about-section ul {
@@ -89,7 +79,6 @@
   font-size: 24px;
   font-weight: 400;
   margin: 5px auto;
-  border-bottom: 2px solid #000;
 }
 
 .contact-ul li {

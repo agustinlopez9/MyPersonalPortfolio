@@ -1,5 +1,5 @@
 main {
-  background-color: #fff;
+  background: transparent;
 }
 
 .main-inner-div {
@@ -22,7 +22,6 @@ main {
 }
 
 .main-inner-div h2 {
-  color: #1f1f1f;
   font-size: 28px;
   font-weight: 400;
   margin-top: 5px;
@@ -34,7 +33,6 @@ main {
   color: #363795;
   font-size: 24px;
   font-weight: 400;
-  border-bottom: 2px solid #363795;
 }
 
 .main-inner-div img {
@@ -85,21 +83,20 @@ main {
 }
 
 .social-links a {
-  color: #1f1f1f;
   text-decoration: none;
   font-size: 0;
+}
+
+.social-links a:hover {
+  color: #363795;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .social-links i {
   margin: 10px;
   font-size: 36px;
   cursor: pointer;
-}
-
-.social-links i:hover {
-  color: #363795;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 @media screen and (max-width: 1369px) {

@@ -23,7 +23,6 @@
 
 .projects-inner-div {
   text-align: center;
-  background: #fff;
   max-width: 980px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px 0px #000;
@@ -100,7 +99,6 @@
   margin: 15px 10px;
   height: 220px;
   width: 300px;
-  background-color: #5a5a5a;
   color: #fff;
   text-align: center;
   -webkit-transition: 0.2s;
@@ -111,7 +109,6 @@
 
 .card div {
   border-radius: 0 0 5px 5px;
-  background-color: #5a5a5a;
   position: absolute;
   height: 60px;
   top: 168px;
