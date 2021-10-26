@@ -1,6 +1,6 @@
 export const MainItems = [
     {
-        title: "My Name is Agustin Lopez",
+        title: "My name is Agustin Lopez",
         desc: "Front-End Developer",
         scroll: "portfolio",
         thumbnail: "/images/profile_photo_blur.jpg",

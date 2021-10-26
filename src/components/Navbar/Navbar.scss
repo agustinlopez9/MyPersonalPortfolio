@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 1025px) {
     .navbar-logo {
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .nav-menu {
         margin: 5px 10px;
@@ -132,5 +132,12 @@
     }
     .menu-icon {
         display: block;
+    }
+}
+@media screen and (max-width: 480px) {
+    .navbar-logo {
+        span {
+            font-size: 24px;
+        }
     }
 }

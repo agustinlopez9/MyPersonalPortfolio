@@ -10,7 +10,8 @@ export default function Navbar() {
             <nav className="NavbarItems">
                 <div className="navbar-inner">
                     <h1 className="navbar-logo">
-                        <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="logo.png" /> My Portfolio
+                        <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="logo.png" />
+                        <span>My Portfolio</span>
                     </h1>
                     <ul className={state ? "nav-menu active" : "nav-menu"}>
                         {MenuItems.map((item, index) => {
