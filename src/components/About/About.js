@@ -9,7 +9,7 @@ export default function About() {
         <React.Fragment>
             <section id="about" className="about-section">
                 <h2>About Me</h2>
-                <p>I'm a 22 years old student from Buenos Aires, Argentina studying to be a front-end developer.</p>
+                <p>I'm a 22 years old student from Buenos Aires, Argentina and I'm currently learning the latest web development technologies.</p>
                 <a target="_blank" rel="noopener noreferrer" href="Lopez Piceda Agustin Fernando - Curriculum.pdf">
                     CV
                 </a>
