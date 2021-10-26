@@ -112,12 +112,11 @@ function App() {
         try {
             themeToggler();
             window.localStorage.setItem("theme", theme === "light" ? "dark" : "light");
-            console.log(window.localStorage.getItem("theme"));
         } catch (error) {
             console.error(error);
         }
     };
-    //<button onClick={() => themeToggler()}>Change Theme</button>
+
     return (
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
             <GlobalStyles />
