@@ -21,10 +21,15 @@
 }
 
 .navbar-logo {
+    display: flex;
     color: #363795;
+    align-items: center;
     justify-self: start;
     margin-left: 50px;
     cursor: pointer;
+    img {
+        width: 50px;
+    }
 }
 
 .menu-icon {
@@ -58,7 +63,7 @@
 
 .nav-links::after {
     display: block;
-    content: '';
+    content: "";
     position: relative;
     top: 18px;
     border-bottom: 2px solid #363795;
@@ -84,7 +89,7 @@
     .NavbarItems {
         font-size: 18px;
     }
-    
+
     .nav-menu {
         display: flex;
         flex-direction: column;
@@ -121,7 +126,7 @@
         opacity: 1;
         left: 0;
         transition: all 0.5s ease;
-        .nav-links{
+        .nav-links {
             opacity: 1;
         }
     }

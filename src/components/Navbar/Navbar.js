@@ -9,7 +9,9 @@ export default function Navbar() {
         <React.Fragment>
             <nav className="NavbarItems">
                 <div className="navbar-inner">
-                    <h1 className="navbar-logo">My Portfolio</h1>
+                    <h1 className="navbar-logo">
+                        <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="logo.png" /> My Portfolio
+                    </h1>
                     <ul className={state ? "nav-menu active" : "nav-menu"}>
                         {MenuItems.map((item, index) => {
                             return (
