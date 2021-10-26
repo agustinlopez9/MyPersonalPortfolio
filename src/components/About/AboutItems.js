@@ -19,7 +19,7 @@ export const AboutItems = [
     },
     {
         title: "React",
-        desc: "React Hooks (useState, useEffect and useRef).",
+        desc: "React Hooks (useState, useEffect and useRef), styled-components.",
         cName: "info-block",
         icon: "fab fa-react",
     },

@@ -104,16 +104,25 @@ const StyledApp = styled.div`
 `;
 
 function App() {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState(window.localStorage.getItem("theme"));
     const themeToggler = () => {
         theme === "light" ? setTheme("dark") : setTheme("light");
+    };
+    const setLocalStorage = () => {
+        try {
+            themeToggler();
+            window.localStorage.setItem("theme", theme === "light" ? "dark" : "light");
+            console.log(window.localStorage.getItem("theme"));
+        } catch (error) {
+            console.error(error);
+        }
     };
     //<button onClick={() => themeToggler()}>Change Theme</button>
     return (
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
             <GlobalStyles />
             <StyledApp className="App">
-                <Navbar button={() => themeToggler()} text={theme === "light" ? "Dark mode" : "Light mode"} logourl={theme === "light" ? "/images/logo.png" : "/images/logo_white.png"} />
+                <Navbar button={() => setLocalStorage()} text={theme === "light" ? "Dark mode" : "Light mode"} logourl={theme === "light" ? "/images/logo.png" : "/images/logo_white.png"} />
                 <Main />
                 <Projects />
                 <About />
