@@ -11,17 +11,17 @@ export default function Main() {
             {MainItems.map((item, index) => (
                 <main id={item.scroll} key={"main"}>
                     <div key={index} className="main-inner-div">
-                        <div className="profile-div" data-aos="fade-up">
+                        <div className="profile-div" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
                             <img src={process.env.PUBLIC_URL + item.thumbnail} alt={item.image} className={img ? "thumbnail hide" : "thumbnail show"}></img>
                             <img src={process.env.PUBLIC_URL + item.image} alt={item.image} onLoad={setImg} className={img ? "picture show" : "picture hide"}></img>
                         </div>
-                        <h2 data-aos="fade-up" data-aos-delay="100">
+                        <h2 data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
                             {item.title}
                         </h2>
-                        <h3 data-aos="fade-up" data-aos-delay="200">
+                        <h3 data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
                             {item.desc}
                         </h3>
-                        <ul data-aos="fade-up" data-aos-delay="300" className="social-links" key={"social-links"}>
+                        <ul data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" className="social-links" key={"social-links"}>
                             <li key={"linkedin"}>
                                 <a href={item.linkedin} rel="noopener noreferrer" target="_blank">
                                     <i className="fab fa-linkedin"></i>
