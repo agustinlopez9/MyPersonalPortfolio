@@ -17,7 +17,7 @@ export const lightTheme = {
     underline: "2px solid #363795",
 };
 export const darkTheme = {
-    body: "#2a2b40",
+    body: "#141E30",
     title: "#fff",
     menuiconColor: "#fff",
     fontColorH2Main: "#fff",
@@ -25,11 +25,11 @@ export const darkTheme = {
     fontColorAMain: "#fff",
     fontColorH2Projects: "#fff",
     fontColorAProjects: "#fff",
-    cardBackground: "#3b3b4f",
+    cardBackground: "#243B55",
     fontColorP: "#DCDCDC",
     fontColorH4Projects: "#fff",
     underlineH4Projects: "2px solid #fff",
-    infoblockBackground: "#3b3b4f",
+    infoblockBackground: "#243B55",
     underline: "2px solid #005c97",
 };
 
