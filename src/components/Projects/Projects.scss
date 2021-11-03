@@ -78,6 +78,7 @@
     transition: 0.2s;
     cursor: pointer;
     border-radius: 5px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     div {
         border-radius: 0 0 5px 5px;
         position: absolute;

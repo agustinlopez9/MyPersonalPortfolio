@@ -1,5 +1,14 @@
 export const AppItems = [
     {
+        title: "Movie Search Engine",
+        desc: "Movie search engine made with SASS, JQuery, Axios and OMDb API",
+        url: "/images/MovieSearch.png",
+        video: "/images/MovieSearch.mp4",
+        cName: "card",
+        pagelink: "https://aflp2199.github.io/MovieSearchEngine/index.html",
+        gitlink: "https://github.com/AFLP2199/MovieSearchEngine",
+    },
+    {
         title: "Tip Calculator App",
         desc: "Tip calculator app made with SASS and Vanilla Javascript, the design was taken from Frontend Mentor",
         url: "/images/TipCalculatorApp.png",
