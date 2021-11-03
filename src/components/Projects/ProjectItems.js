@@ -30,6 +30,15 @@ export const AppItems = [
 
 export const WebItems = [
     {
+        title: "HackCTF",
+        url: "/images/HackCTF.png",
+        desc: "Cybersecurity website made with SASS and JQuery",
+        video: "/images/HackCTF.mp4",
+        cName: "card",
+        pagelink: "https://hackctf.org/ctf/",
+        gitlink: "#/",
+    },
+    {
         title: "Apinta Seccional Castelar",
         url: "/images/Apinta.png",
         desc: "Website made for Apinta Seccional Castelar made with CSS and JQuery",
