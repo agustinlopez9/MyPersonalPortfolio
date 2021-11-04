@@ -26,7 +26,7 @@
   max-width: 980px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px 0px #000;
-          box-shadow: 0px 0px 10px 0px #000;
+  box-shadow: 0px 0px 10px 0px #000;
   margin: 30px auto;
   padding: 20px 10px;
 }
@@ -37,11 +37,11 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 20px;
   text-transform: uppercase;
   margin: 5px auto;
@@ -84,14 +84,14 @@
 .card-items {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .card {
@@ -121,7 +121,7 @@
   z-index: 2;
   overflow-y: hidden;
   -webkit-box-shadow: 0px 0px 10px 0px #000;
-          box-shadow: 0px 0px 10px 0px #000;
+  box-shadow: 0px 0px 10px 0px #000;
 }
 
 .card h4 {
@@ -183,7 +183,7 @@
 
 .card:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .card:hover div {
@@ -197,7 +197,7 @@
 
 .thumb-img {
   -webkit-box-shadow: 0px 0px 10px 0px #000;
-          box-shadow: 0px 0px 10px 0px #000;
+  box-shadow: 0px 0px 10px 0px #000;
   visibility: hidden;
   opacity: 0;
   border-radius: 5px 5px 0 0;
@@ -217,7 +217,7 @@
 .thumb-video {
   display: block;
   -webkit-box-shadow: 0px 0px 10px 0px #000;
-          box-shadow: 0px 0px 10px 0px #000;
+  box-shadow: 0px 0px 10px 0px #000;
   border-radius: 5px 5px 0 0;
   opacity: 0;
   visibility: hidden;
@@ -227,6 +227,7 @@
   right: 0;
   width: 100%;
   z-index: 1;
+  pointer-events: none;
 }
 
 .thumb-video.active {
@@ -337,4 +338,5 @@
     height: 200px;
   }
 }
+
 /*# sourceMappingURL=Projects.css.map */

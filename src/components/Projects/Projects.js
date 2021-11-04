@@ -8,9 +8,11 @@ function Card(props) {
     const handleClick = () => setHover(!hover);
 
     function play() {
+        videoRef.current.currentTime = 0;
         videoRef.current.play();
     }
     function pause() {
+        videoRef.current.currentTime = 0;
         videoRef.current.pause();
     }
 
