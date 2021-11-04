@@ -1,7 +1,16 @@
 export const AppItems = [
     {
+        title: "Photo Gallery",
+        desc: "Image search engine made with React, SASS, Axios and Pixabay API",
+        url: "/images/PhotoGallery.png",
+        video: "/images/PhotoGallery.mp4",
+        cName: "card",
+        pagelink: "https://aflp2199.github.io/PhotoGallery/",
+        gitlink: "https://github.com/AFLP2199/PhotoGallery",
+    },
+    {
         title: "Movie Search Engine",
-        desc: "Movie search engine made with SASS, JQuery, Axios and OMDb API",
+        desc: "Movie search engine made with JQuery, SASS, Axios and OMDb API",
         url: "/images/MovieSearch.png",
         video: "/images/MovieSearch.mp4",
         cName: "card",
