@@ -31,8 +31,13 @@ function Card(props) {
                 key={props.index}
             >
                 <img src={process.env.PUBLIC_URL + props.url} alt={props.url} className={hover ? "thumb-img" : "thumb-img active"} />
-                <div>
+                <div className="info-card">
                     <h4>{props.name}</h4>
+                    <div className="tools-used">
+                        {Object.entries(props.toolsused).map(([key, value], index) => {
+                            return <img width="32px" src={value} alt={key} key={index} />;
+                        })}
+                    </div>
                     <p className={hover ? "show" : "hide"}>
                         {props.desc}
                         <a target="_blank" rel="noopener noreferrer" href={props.pagelink} className="card-button-link">
@@ -70,17 +75,53 @@ export default function Projects() {
                     </ul>
                     <div className={toggleTab === 0 ? "card-items active-content" : "card-items disabled-content"} id="apps">
                         {AppItems.map((item, index) => {
-                            return <Card key={index} desc={item.desc} name={item.title} class={item.cName} url={item.url} video={item.video} gitlink={item.gitlink} pagelink={item.pagelink} />;
+                            return (
+                                <Card
+                                    key={index}
+                                    desc={item.desc}
+                                    toolsused={item.toolsused}
+                                    name={item.title}
+                                    class={item.cName}
+                                    url={item.url}
+                                    video={item.video}
+                                    gitlink={item.gitlink}
+                                    pagelink={item.pagelink}
+                                />
+                            );
                         })}
                     </div>
                     <div className={toggleTab === 1 ? "card-items active-content" : "card-items disabled-content"} id="websites">
                         {WebItems.map((item, index) => {
-                            return <Card key={index} desc={item.desc} name={item.title} class={item.cName} url={item.url} video={item.video} gitlink={item.gitlink} pagelink={item.pagelink} />;
+                            return (
+                                <Card
+                                    key={index}
+                                    desc={item.desc}
+                                    toolsused={item.toolsused}
+                                    name={item.title}
+                                    class={item.cName}
+                                    url={item.url}
+                                    video={item.video}
+                                    gitlink={item.gitlink}
+                                    pagelink={item.pagelink}
+                                />
+                            );
                         })}
                     </div>
                     <div className={toggleTab === 2 ? "card-items active-content" : "card-items disabled-content"} id="design">
                         {DesignItems.map((item, index) => {
-                            return <Card key={index} desc={item.desc} name={item.title} class={item.cName} url={item.url} video={item.video} gitlink={item.gitlink} pagelink={item.pagelink} />;
+                            return (
+                                <Card
+                                    key={index}
+                                    desc={item.desc}
+                                    toolsused={item.toolsused}
+                                    name={item.title}
+                                    class={item.cName}
+                                    url={item.url}
+                                    video={item.video}
+                                    gitlink={item.gitlink}
+                                    pagelink={item.pagelink}
+                                />
+                            );
                         })}
                     </div>
                 </div>

@@ -71,7 +71,7 @@
 .card {
     position: relative;
     margin: 15px 10px;
-    height: 220px;
+    height: 260px;
     width: 300px;
     color: #fff;
     text-align: center;
@@ -79,15 +79,15 @@
     cursor: pointer;
     border-radius: 5px;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    div {
+    .info-card {
         border-radius: 0 0 5px 5px;
         position: absolute;
-        height: 60px;
         top: 168px;
         left: 0;
         width: 100%;
         padding: 16px 10px;
-        transition: 0.2s;
+        transition: all 0.2s ease-in-out;
+
         z-index: 2;
         overflow-y: hidden;
         box-shadow: 0px 0px 10px 0px #000;
@@ -97,9 +97,31 @@
         font-size: 18px;
     }
     p {
+        opacity: 0;
+        max-height: 0;
+        transition: all 0.2s ease-in-out;
         font-weight: 300;
         font-size: 16px;
         margin-top: 5px;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+    p {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+.tools-used {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img {
+        display: block;
+        margin: 10px 10px 5px 10px;
     }
 }
 
@@ -113,11 +135,11 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-}
 
-.card-button-link:hover {
-    background-color: #363795;
-    transition: all 0.2s ease-in-out;
+    &:hover {
+        background-color: #363795;
+        transition: all 0.2s ease-in-out;
+    }
 }
 
 #websites .card-button-link:nth-child(2) {
@@ -129,16 +151,6 @@ $j: 6;
         z-index: $j; //set index to avoid overlap
     }
     $j: $j - 1;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    div {
-        height: 195px;
-    }
-    p {
-        transition: 0.2s;
-    }
 }
 .thumb-img {
     box-shadow: 0px 0px 10px 0px #000;
@@ -195,16 +207,9 @@ $j: 6;
         padding: 20px 10px 30px 10px;
     }
     .card {
-        height: 200px;
         width: 275px;
-        div {
+        .info-card {
             top: 153px;
-        }
-    }
-    .card:hover {
-        z-index: 1;
-        div {
-            height: 215px;
         }
     }
 }
@@ -221,21 +226,13 @@ $j: 6;
         padding: 10px 10px 20px 10px;
     }
     .card {
-        height: 200px;
+        height: 250px;
         width: 275px;
-        div {
-            top: 153px;
-        }
         h4 {
             font-size: 16px;
         }
         p {
             font-size: 14px;
-        }
-    }
-    .card:hover {
-        div {
-            height: 185px;
         }
     }
 }
@@ -268,16 +265,11 @@ $j: 6;
     .card {
         padding: 10px;
         margin: 15px 5px;
-        height: 185px;
+        height: 230px;
         width: 250px;
-        div {
+        .info-card {
             top: 135px;
             z-index: 11;
-        }
-    }
-    .card:hover {
-        div {
-            height: 200px;
         }
     }
 }
