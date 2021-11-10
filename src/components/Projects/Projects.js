@@ -41,10 +41,10 @@ function Card(props) {
                     <p className={hover ? "show" : "hide"}>
                         {props.desc}
                         <a target="_blank" rel="noopener noreferrer" href={props.pagelink} className="card-button-link">
-                            Website
+                            {props.pagetitle}
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href={props.gitlink} className="card-button-link">
-                            GitHub
+                            GitHub Repository
                         </a>
                     </p>
                 </div>
@@ -84,6 +84,7 @@ export default function Projects() {
                                     class={item.cName}
                                     url={item.url}
                                     video={item.video}
+                                    pagetitle={item.pagetitle}
                                     gitlink={item.gitlink}
                                     pagelink={item.pagelink}
                                 />
@@ -101,6 +102,7 @@ export default function Projects() {
                                     class={item.cName}
                                     url={item.url}
                                     video={item.video}
+                                    pagetitle={item.pagetitle}
                                     gitlink={item.gitlink}
                                     pagelink={item.pagelink}
                                 />
@@ -118,6 +120,7 @@ export default function Projects() {
                                     class={item.cName}
                                     url={item.url}
                                     video={item.video}
+                                    pagetitle={item.pagetitle}
                                     gitlink={item.gitlink}
                                     pagelink={item.pagelink}
                                 />
