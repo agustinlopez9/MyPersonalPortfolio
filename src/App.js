@@ -92,6 +92,10 @@ const StyledApp = styled.div`
             color: ${(props) => props.theme.fontColorH4Projects};
         }
     }
+    .skills-title {
+        color: ${(props) => props.theme.fontColorH4Projects};
+        border-bottom: ${(props) => props.theme.underlineH4Projects};
+    }
     .contact-ul {
         h4 {
             color: ${(props) => props.theme.fontColorH4Projects};
@@ -121,7 +125,11 @@ function App() {
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
             <GlobalStyles />
             <StyledApp className="App">
-                <Navbar button={() => setLocalStorage()} text={theme === "light" ? "Dark mode" : "Light mode"} logourl={theme === "light" ? "/images/logo.png" : "/images/logo_white.png"} />
+                <Navbar
+                    button={() => setLocalStorage()}
+                    text={theme === "light" ? "Dark mode" : "Light mode"}
+                    logourl={theme === "light" ? "/images/logo.png" : "/images/logo_white.png"}
+                />
                 <Main />
                 <Projects />
                 <About />

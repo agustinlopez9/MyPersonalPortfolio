@@ -7,7 +7,7 @@ export const AboutItems = [
     },
     {
         title: "CSS",
-        desc: "Flexbox and CSS Grid. Also usage of SASS preprocessor.",
+        desc: "Flexbox and CSS Grid. Also usage of SASS preprocessor. Tailwind CSS Framework.",
         cName: "info-block",
         icon: "fab fa-css3-alt",
     },
@@ -19,8 +19,14 @@ export const AboutItems = [
     },
     {
         title: "React",
-        desc: "React Hooks (useState, useEffect and useRef), styled-components.",
+        desc: "Class components and React Hooks, styled-components.",
         cName: "info-block",
         icon: "fab fa-react",
+    },
+    {
+        title: "Node.js",
+        desc: "Popular libraries of node like express and mongoose for mongoDB databases",
+        cName: "info-block",
+        icon: "fab fa-node",
     },
 ];

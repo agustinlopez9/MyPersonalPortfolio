@@ -1,12 +1,27 @@
 export const AppItems = [
     {
+        title: "Login System",
+        desc: "Login system made with MERN Stack and Tailwind CSS",
+        toolsused: [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+        ],
+        url: "/images/Login-system.png",
+        video: "/images/Login-system.mp4",
+        cName: "card",
+        pagetitle: "Live version",
+        pagelink: "http://login-system-front-aflp2199.herokuapp.com/login",
+        gitlink: "https://github.com/AFLP2199/login-system-frontend",
+    },
+    {
         title: "Photo Gallery",
         desc: "Image search engine made with React, SASS, Axios and Pixabay API",
         toolsused: [
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
         ],
         url: "/images/PhotoGallery.png",
         video: "/images/PhotoGallery.mp4",
