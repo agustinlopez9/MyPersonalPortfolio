@@ -13,7 +13,11 @@ export default function About() {
                     I'm a 22 years old student from Buenos Aires, Argentina and I'm currently learning the latest web
                     development technologies.
                 </p>
-                <a target="_blank" rel="noopener noreferrer" href="Lopez Piceda Agustin Fernando - Curriculum.pdf">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={process.env.PUBLIC_URL + "/Lopez Piceda Agustin Fernando - Curriculum.pdf"}
+                >
                     CV
                 </a>
                 <div className="information-div">
