@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export default function Navbar(props) {
     const [langMenu, setLangMenu] = useState(false);
     const navRef = useRef();
+    const langRef = useRef();
     const [t, i18n] = useTranslation("global");
 
     useEffect(() => {
@@ -21,6 +22,16 @@ export default function Navbar(props) {
         window.addEventListener("scroll", getScrollTop);
 
         return () => window.removeEventListener("scroll", getScrollTop);
+    });
+
+    useEffect(() => {
+        const handleClick = (event) => {
+            if (!langRef.current.contains(event.target)) {
+                setLangMenu(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClick);
+        return () => document.removeEventListener("mousedown", handleClick);
     });
 
     const handleChangeLanguage = (lang) => {
@@ -53,6 +64,7 @@ export default function Navbar(props) {
                         />
                     </div>
                     <ul
+                        ref={langRef}
                         className={`m-2 p-1 md:p-2 absolute top-12 -right-2 text-center bg-black bg-opacity-40 rounded-md z-40 w-12 md:w-14 ${
                             langMenu ? "block" : "hidden"
                         }`}
