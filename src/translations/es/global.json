@@ -1,0 +1,82 @@
+{
+    "navbar": {
+        "title": "Mi Portafolio",
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "about": "Sobre mi"
+    },
+    "main":{
+        "name": "Hola! Mi nombre es Agustín López",
+        "subtitle": "Desarrollador Front-end"
+    },
+    "about": {
+        "aboutme": "Sobre mi",
+        "info": "Soy un estudiante de 22 años de Buenos Aires, Argentina, actualmente estoy aprendiendo las ultimas tecnologias de Desarrollo Web.",
+        "cvlink": "/Lopez Piceda Agustin Fernando - Curriculum es.pdf",
+        "skills": "Conocimientos",
+        "contact": "Contacto",
+        "html": {
+            "title": "HTML",
+            "desc": "Sintaxis HTML y atributos."
+        },
+        "css": {
+            "title": "CSS",
+            "desc": "Flexbox y CSS Grid. Uso del preprocesador SASS y del Framework Tailwind CSS."
+        },
+        "javascript" : {
+            "title": "Javascript",
+            "desc": "JQuery, programación funcional y ES6."
+        },
+        "react" : {
+            "title": "React",
+            "desc": "React Hooks y Context API."
+        },
+        "node" : {
+            "title": "Node.js",
+            "desc": "Librerias populares de Node como Express.js y mongoose para base de datos mongoDB"
+        }
+    },
+    "navigation": {
+        "home": "Inicio",
+        "projects": "Mis Proyectos",
+        "about": "Sobre mi"
+    },
+    "projects":{
+        "github": "Repositorio de GitHub",
+        "loginsystem": {
+            "title": "Sistema de autenticación",
+            "desc": "Sistema de autenticación hecho con el stack MERN y Tailwind CSS.",
+            "pagetitle": "Demostración"
+        },
+        "photogallery": {
+            "title": "Galeria de fotos",
+            "desc": "Buscador de imagenes hecho con React, SASS, Axios y Pixabay API.",
+            "pagetitle": "Demostración"
+        },
+        "moviesearchengine": {
+            "title": "Buscador de peliculas",
+            "desc": "Buscador de peliculas hecho con JQuery, SASS, Axios y OMDb API.",
+            "pagetitle": "Demostración"
+        },
+        "tipcalculatorapp": {
+            "title": "Calculadora de propinas",
+            "desc": "Calculadora de propinas hecha con SASS y Vanilla Javascript, el diseño fue sacado de Frontend Mentor.",
+            "pagetitle": "Demostración"
+        },
+        "simplecalculator": {
+            "title": "Simple calculadora",
+            "desc": "Simple calculadora hecha con CSS y Vanilla Javascript.",
+            "pagetitle": "Demostración"
+        },
+        "hackctf": {
+            "title": "HackCTF",
+            "desc": "Contribuí en el desarrollo del sitio web de ciberseguridad HackCTF, diseño hecho con SASS y JQuery.",
+            "pagetitle": "Ir al sitio web"
+        },
+        "apinta": {
+            "title": "Apinta Seccional Castelar",
+            "desc": "Primer sitio web que cree, Apinta Seccional Castelar. Hecho con CSS y JQuery.",
+            "pagetitle": "Ir al sitio web"
+        }
+    }
+}

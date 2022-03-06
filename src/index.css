@@ -1,0 +1,46 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+body {
+    background: linear-gradient(-90deg, #1e293b, #1e293b, #334155, #64748b);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@layer components {
+    .thumb-img {
+        @apply max-w-full;
+    }
+    .thumb-video {
+        @apply absolute top-0 left-0 right-0;
+    }
+    .btn {
+        @apply p-2 text-sm md:text-base bg-blue-700 hover:bg-blue-900 text-white my-1 rounded-sm ease-in-out duration-200;
+    }
+}

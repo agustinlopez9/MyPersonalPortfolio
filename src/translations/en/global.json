@@ -1,0 +1,82 @@
+{
+    "navbar": {
+        "title": "My Portfolio",
+        "home": "Home",
+        "projects": "Projects",
+        "about": "About me"
+    },
+    "main":{
+        "name": "Hi! My name is Agustín López",
+        "subtitle": "Front-end developer"
+    },
+    "about": {
+        "aboutme": "About me",
+        "info": "I'm a 22 years old student from Buenos Aires, Argentina and I'm currently learning the latest Web Development technologies.",
+        "cvlink": "/Lopez Piceda Agustin Fernando - Curriculum en.pdf",
+        "skills": "Skills",
+        "contact": "Contact",
+        "html": {
+            "title": "HTML",
+            "desc": "HTML syntax and attributes."
+        },
+        "css": {
+            "title": "CSS",
+            "desc": "Flexbox and CSS Grid. Also usage of SASS preprocessor and Tailwind CSS Framework."
+        },
+        "javascript" : {
+            "title": "Javascript",
+            "desc": "JQuery, functional programming and ES6."
+        },
+        "react" : {
+            "title": "React",
+            "desc": "React Hooks y Context API."
+        },
+        "node" : {
+            "title": "Node.js",
+            "desc": "Popular libraries of Node like Express.js and mongoose for mongoDB database"
+        }
+    },
+    "navigation": {
+        "home": "Home",
+        "projects": "My Projects",
+        "about": "About me"
+    },
+    "projects":{
+        "github": "GitHub Repository",
+        "loginsystem": {
+            "title": "Login System",
+            "desc": "Login system made with MERN Stack and Tailwind CSS.",
+            "pagetitle": "Live version"
+        },
+        "photogallery": {
+            "title": "Photo Gallery",
+            "desc": "Image search engine made with React, SASS, Axios and Pixabay API.",
+            "pagetitle": "Live version"
+        },
+        "moviesearchengine": {
+            "title": "Movie Search Engine",
+            "desc": "Movie search engine made with JQuery, SASS, Axios and OMDb API.",
+            "pagetitle": "Live version"
+        },
+        "tipcalculatorapp": {
+            "title": "Tip Calculator App",
+            "desc": "Tip calculator app made with SASS and Vanilla Javascript, the design was taken from Frontend Mentor.",
+            "pagetitle": "Live version"
+        },
+        "simplecalculator": {
+            "title": "Simple Calculator",
+            "desc": "Simple calculator made with CSS and Vanilla Javascript.",
+            "pagetitle": "Live version"
+        },
+        "hackctf": {
+            "title": "HackCTF",
+            "desc": "I contributed in the development of cybersecurity website HackCTF, design made with SASS and JQuery.",
+            "pagetitle": "Go to website"
+        },
+        "apinta": {
+            "title": "Apinta Seccional Castelar",
+            "desc": "First website I created, Apinta Seccional Castelar. Made with CSS and JQuery.",
+            "pagetitle": "Go to website"
+        }
+    }
+}
